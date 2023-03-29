@@ -4,21 +4,33 @@
 
 #ifndef S_S_B_2A_GAME_H
 #define S_S_B_2A_GAME_H
+
 #include "player.hpp"
-class game{
-private:
-    player& p1, p2;
+#include <string>
 
+using namespace std;
 
-public:
-    game(){};
-    game(p1,p2);
-    void playTurn();
-    void printLastTurn();
-    void playAll();
-    void printWiner();
-    void printLog();
-    void printStats();
-};
+namespace ariel {
+    class Game {
+    private:
+        Player &player1, &player2;
 
+    public:
+        Game();
+
+        Game(Player &player1, Player &player2);
+
+        void playTurn();
+
+        void printLastTurn();
+
+        void playAll();
+
+        void printWiner();
+
+        void printLog();
+
+        void printStats();
+    };
+}
 #endif //S_S_B_2A_GAME_H

@@ -5,4 +5,8 @@
 #ifndef S_S_B_2A_CARD_H
 #define S_S_B_2A_CARD_H
 
+namespace ariel {
+    class Card {
+    };
+}
 #endif //S_S_B_2A_CARD_H
